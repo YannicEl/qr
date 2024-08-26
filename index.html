@@ -4,18 +4,29 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>QR Code Generator</title>
+
+		<link id="favicon" rel="icon" type="image/png" href="favicon.png" />
+		<link rel="icon" type="image/svg+xml" href="favicon.svg" />
 	</head>
 	<body>
 		<div id="app">
-			<img id="qr" width="300" height="300" />
+			<div id="qrWrapper">
+				<img id="qrImg" width="300" height="300" />
+				<!-- <canvas id="canvas" height="300" width="300"></canvas> -->
+			</div>
 
 			<form id="generateForm">
 				<label>
-					<input name="url" type="text" />
+					<input name="url" type="text" placeholder="example.com" />
 				</label>
 
-				<button>generate</button>
+				<button>Generate</button>
 			</form>
+
+			<div id="downloadButtons">
+				<button id="svgDownload">Download as SVG</button>
+				<button id="pngDownload">Download as PGN</button>
+			</div>
 		</div>
 
 		<script type="module" src="/src/main.ts"></script>
