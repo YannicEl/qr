@@ -1,0 +1,14 @@
+{
+	"name": "qr",
+	"type": "module",
+	"scripts": {
+		"dev": "vite --port 3000",
+		"build": "tsc && vite build"
+	},
+	"devDependencies": {
+		"@paulmillr/qr": "0.2.0",
+		"prettier": "3.3.3",
+		"typescript": "5.5.3",
+		"vite": "5.4.1"
+	}
+}
