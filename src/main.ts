@@ -5,8 +5,6 @@ const formElm = document.querySelector<HTMLFormElement>('#generateForm')!;
 const qrImgElm = document.querySelector<HTMLImageElement>('#qrImg')!;
 const donwloadButtonsElm = document.querySelector<HTMLImageElement>('#downloadButtons')!;
 
-const canvas = document.querySelector<HTMLCanvasElement>('#canvas')!;
-
 formElm.onsubmit = async (event) => {
 	event.preventDefault();
 
