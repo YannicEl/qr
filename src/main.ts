@@ -1,5 +1,5 @@
 import './style.css';
-import encodeQR from '@paulmillr/qr';
+import encodeQR from 'qr';
 
 const formElm = document.querySelector<HTMLFormElement>('#generateForm')!;
 const qrImgElm = document.querySelector<HTMLImageElement>('#qrImg')!;

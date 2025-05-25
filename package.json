@@ -3,14 +3,18 @@
 	"type": "module",
 	"scripts": {
 		"dev": "vite --port 3000",
-		"build": "tsc && vite build"
+		"build": "vite build",
+		"cf-typegen": "wrangler types",
+		"deploy": "pnpm build && wrangler deploy"
 	},
 	"devDependencies": {
-		"prettier": "3.3.3",
+		"@cloudflare/vite-plugin": "1.2.4",
+		"prettier": "3.5.3",
 		"typescript": "5.5.3",
-		"vite": "5.4.1"
+		"vite": "6.3.5",
+		"wrangler": "4.16.1"
 	},
 	"dependencies": {
-		"@paulmillr/qr": "0.2.0"
+		"qr": "0.4.2"
 	}
 }

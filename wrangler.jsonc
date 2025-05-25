@@ -1,0 +1,10 @@
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "qr",
+	"compatibility_date": "2025-05-25",
+
+	"observability": { "enabled": true },
+   "routes": [{ "pattern": "qr.yannic.at", "custom_domain": true }],
+		
+	
+}
